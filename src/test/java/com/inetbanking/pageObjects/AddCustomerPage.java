@@ -78,10 +78,10 @@ public class AddCustomerPage {
 		rdGender.click();
 	}
 
-	public void custdob(String mm,String dd,String yy) {
+	public void custdob(String mm,String dd,String yyyy) {
 		txtdob.sendKeys(mm);
 		txtdob.sendKeys(dd);
-		txtdob.sendKeys(yy);
+		txtdob.sendKeys(yyyy);
 		
 	}
 

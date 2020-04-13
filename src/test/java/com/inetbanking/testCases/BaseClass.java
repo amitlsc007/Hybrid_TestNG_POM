@@ -55,7 +55,9 @@ public class BaseClass {
 		}
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
 		driver.get(baseURL);
+		driver.manage().window().maximize();
 	}
 	
 	@AfterClass
@@ -76,12 +78,11 @@ public class BaseClass {
 	{
 		String generatedstring=RandomStringUtils.randomAlphabetic(8);
 		return(generatedstring);
-	}
-	
+	}	
 	public static String randomeNum() {
 		String generatedString2 = RandomStringUtils.randomNumeric(4);
 		return (generatedString2);
 	}
 	
-	
+
 }
